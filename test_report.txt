@@ -1,0 +1,50 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.15, pytest-9.1.1, pluggy-1.7.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /content/pork-rasher-defects
+plugins: typeguard-4.6.0, anyio-4.15.1, langsmith-0.14.11, platformdirs-4.13.3
+collecting ... collected 41 items
+
+tests/test_pork_inspect.py::test_fix_data_yaml_makes_split_paths_absolute PASSED [  2%]
+tests/test_pork_inspect.py::test_fix_data_yaml_missing_yaml_raises PASSED [  4%]
+tests/test_pork_inspect.py::test_fix_data_yaml_missing_split_raises PASSED [  7%]
+tests/test_pork_inspect.py::test_read_class_names_from_list PASSED       [  9%]
+tests/test_pork_inspect.py::test_read_class_names_from_dict PASSED       [ 12%]
+tests/test_pork_inspect.py::test_read_class_names_without_names_raises PASSED [ 14%]
+tests/test_pork_inspect.py::test_parse_label_line_box PASSED             [ 17%]
+tests/test_pork_inspect.py::test_parse_label_line_polygon_becomes_enclosing_box PASSED [ 19%]
+tests/test_pork_inspect.py::test_parse_label_line_rejects_bad_input[3 0.5 0.4 0.2] PASSED [ 21%]
+tests/test_pork_inspect.py::test_parse_label_line_rejects_bad_input[3 0.5 0.4 0.2 0.1 0.9] PASSED [ 24%]
+tests/test_pork_inspect.py::test_parse_label_line_rejects_bad_input[5 0.5 0.5 0.1 0.1] PASSED [ 26%]
+tests/test_pork_inspect.py::test_parse_label_line_rejects_bad_input[-1 0.5 0.5 0.1 0.1] PASSED [ 29%]
+tests/test_pork_inspect.py::test_parse_label_line_rejects_bad_input[1.5 0.5 0.5 0.1 0.1] PASSED [ 31%]
+tests/test_pork_inspect.py::test_parse_label_line_rejects_bad_input[2 0.5 1.4 0.1 0.1] PASSED [ 34%]
+tests/test_pork_inspect.py::test_parse_label_line_rejects_bad_input[2 0.5 abc 0.1 0.1] PASSED [ 36%]
+tests/test_pork_inspect.py::test_count_labels_counts_boxes_empty_files_and_bad_lines PASSED [ 39%]
+tests/test_pork_inspect.py::test_count_labels_missing_folder_raises PASSED [ 41%]
+tests/test_pork_inspect.py::test_find_images_with_class PASSED           [ 43%]
+tests/test_pork_inspect.py::test_find_images_with_class_bad_limit_raises PASSED [ 46%]
+tests/test_pork_inspect.py::test_draw_yolo_boxes_draws_on_box_edge_only PASSED [ 48%]
+tests/test_pork_inspect.py::test_draw_yolo_boxes_missing_label_raises PASSED [ 51%]
+tests/test_pork_inspect.py::test_frame_number[frame_with_red_8669_jpg.rf.3f2a9c.jpg-8669] PASSED [ 53%]
+tests/test_pork_inspect.py::test_frame_number[Frame12.png-12] PASSED     [ 56%]
+tests/test_pork_inspect.py::test_frame_number[/content/data/test/images/frame_with_red_608_jpg.rf.x1y2.jpg-608] PASSED [ 58%]
+tests/test_pork_inspect.py::test_frame_number[tray_photo_001.jpg-None] PASSED [ 60%]
+tests/test_pork_inspect.py::test_nearest_frame_gaps_known_values PASSED  [ 63%]
+tests/test_pork_inspect.py::test_nearest_frame_gaps_same_frame_is_zero PASSED [ 65%]
+tests/test_pork_inspect.py::test_nearest_frame_gaps_empty_train_raises PASSED [ 68%]
+tests/test_pork_inspect.py::test_leakage_summary_fractions PASSED        [ 70%]
+tests/test_pork_inspect.py::test_leakage_summary_bad_input_raises[gaps0-thresholds0] PASSED [ 73%]
+tests/test_pork_inspect.py::test_leakage_summary_bad_input_raises[gaps1-thresholds1] PASSED [ 75%]
+tests/test_pork_inspect.py::test_images_per_second PASSED                [ 78%]
+tests/test_pork_inspect.py::test_images_per_second_rejects_non_positive[0] PASSED [ 80%]
+tests/test_pork_inspect.py::test_images_per_second_rejects_non_positive[-5] PASSED [ 82%]
+tests/test_pork_inspect.py::test_meets_line_speed PASSED                 [ 85%]
+tests/test_pork_inspect.py::test_meets_line_speed_rejects_non_positive[0-60] PASSED [ 87%]
+tests/test_pork_inspect.py::test_meets_line_speed_rejects_non_positive[10-0] PASSED [ 90%]
+tests/test_pork_inspect.py::test_meets_line_speed_rejects_non_positive[-1-60] PASSED [ 92%]
+tests/test_pork_inspect.py::test_meets_line_speed_rejects_non_positive[10--60] PASSED [ 95%]
+tests/test_pork_inspect.py::test_summarise_test_metrics PASSED           [ 97%]
+tests/test_pork_inspect.py::test_per_class_table_only_lists_classes_with_test_boxes PASSED [100%]
+
+============================== 41 passed in 0.23s ==============================
