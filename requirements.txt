@@ -1,0 +1,9 @@
+ultralytics==8.4.183
+roboflow==1.7.1
+pytest==9.1.1
+pdoc==16.0.0
+numpy
+pandas
+matplotlib
+pillow
+pyyaml
