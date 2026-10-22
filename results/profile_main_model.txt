@@ -1,0 +1,23 @@
+         47603 function calls (38644 primitive calls) in 0.403 seconds
+
+   Ordered by: cumulative time
+   List reduced from 245 to 15 due to restriction <15>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       40    0.000    0.000    0.397    0.010 {method 'send' of 'generator' objects}
+       40    0.001    0.000    0.397    0.010 /usr/local/lib/python3.13/dist-packages/ultralytics/engine/predictor.py:321(stream_inference)
+      120    0.000    0.000    0.152    0.001 /usr/local/lib/python3.13/dist-packages/ultralytics/utils/ops.py:71(time)
+      120    0.001    0.000    0.151    0.001 /usr/local/lib/python3.13/dist-packages/torch/cuda/__init__.py:1152(synchronize)
+       60    0.000    0.000    0.150    0.003 /usr/local/lib/python3.13/dist-packages/ultralytics/utils/ops.py:62(__exit__)
+      120    0.149    0.001    0.149    0.001 {built-in method torch._C._cuda_synchronize}
+       20    0.000    0.000    0.144    0.007 /usr/local/lib/python3.13/dist-packages/ultralytics/engine/predictor.py:209(inference)
+  4320/20    0.006    0.000    0.144    0.007 /usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py:1775(_wrapped_call_impl)
+  4320/20    0.010    0.000    0.144    0.007 /usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py:1783(_call_impl)
+       20    0.000    0.000    0.144    0.007 /usr/local/lib/python3.13/dist-packages/ultralytics/nn/autobackend.py:302(forward)
+       20    0.000    0.000    0.143    0.007 /usr/local/lib/python3.13/dist-packages/ultralytics/nn/backends/pytorch.py:80(forward)
+       20    0.000    0.000    0.143    0.007 /usr/local/lib/python3.13/dist-packages/ultralytics/nn/tasks.py:146(forward)
+       20    0.000    0.000    0.143    0.007 /usr/local/lib/python3.13/dist-packages/ultralytics/nn/tasks.py:164(predict)
+       20    0.003    0.000    0.142    0.007 /usr/local/lib/python3.13/dist-packages/ultralytics/nn/tasks.py:181(_predict_once)
+     1140    0.003    0.000    0.094    0.000 /usr/local/lib/python3.13/dist-packages/ultralytics/nn/modules/conv.py:89(forward_fuse)
+
+
