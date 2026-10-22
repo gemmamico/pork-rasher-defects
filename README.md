@@ -47,7 +47,7 @@ Rebuild the docs: pdoc src/pork_inspect.py -o docs/html
 [add after the run]
 
 ## AI use
-Most of the coding for this project was drafted by myself and Anthropic's flagship Opus 5.5 model at Max effort inside the Claude Desktop app. Claude and I fully understand the ins and outs of this project. Admittedly Claude did drastically help with the starter code. Full details are in the AI reflection in my report.
+Most of the coding and formatting/layout such as this .MD file for this project was drafted by myself and Anthropic's flagship Claude Opus 5.5 model at Max effort inside the Claude Desktop app. Claude and I fully understand the ins and outs of this project. Admittedly Claude did drastically help with the starter code. Full details are in the AI reflection in my report.
 
 ## Licence
 MIT, see LICENSE.
