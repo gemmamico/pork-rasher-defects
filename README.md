@@ -1,4 +1,5 @@
-# MMA3001 - Pork rasher packaging defects project - by Gemma Micomonaco
+# MMA3001 - Pork rasher packaging defects project
+# by Gemma Micomonaco
 
 This project trains two object detection models (YOLOv8) to find packaging defects in photos of pork rasher trays, like loose meat, twisted meat, unsealed packs and wrinkles. It then tests how accurate and fast each model is, to see if a small fast model is good enough for a production line.
 
