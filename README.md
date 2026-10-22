@@ -21,7 +21,7 @@ Everything runs in Google Colab, so nothing needs to be installed.
 3. Runtime, Change runtime type, T4 GPU.
 4. Runtime, Run all, then paste your Roboflow key when asked.
 
-It takes about [X] minutes on a free Colab GPU.
+It takes about 25 minutes on a free Colab GPU (with 15 epochs).
 
 ## Environment and dependencies
 - Python 3 on Google Colab with a T4 GPU
@@ -45,7 +45,16 @@ Run the tests: python -m pytest -v tests/
 Rebuild the docs: pdoc src/pork_inspect.py -o docs/html
 
 ## Results
-[add after the run]
+Results from the full run (15 epochs). The test set has 80 photos.
+
+- The small model (YOLOv8n) did better than the bigger one: mAP50 of 0.37 vs 0.28.
+- The bigger model (YOLOv8s) stopped early at epoch 11 (its best was epoch 6), probably because the validation set is small and its scores jump around.
+- Unsealed packs were found well: the small model found 88% of them (49 in the test set).
+- Loose and twisted meat only have 3 or 4 boxes in the test set, and wrinkle has none, so those can't be judged properly.
+- About 2 in 3 test photos have a training photo within 5 video frames, so the scores are probably better than real use would be.
+- Both models are fast enough for 60 trays per minute, even on a CPU (small model: 12 ms per tray on GPU, 92 ms on CPU).
+
+Full tables and charts are in the results folder.
 
 ## AI use
 Most of the coding and formatting/layout such as this .MD file for this project was drafted by myself and Anthropic's flagship Claude Opus 5.5 model at Max effort inside the Claude Desktop app. Claude and I fully understand the ins and outs of this project. Admittedly Claude did drastically help with the starter code. Each file I have reviewed and manually uploaded myself, Claude drafted comments but I went into detail with Claude what a code block actually means rewrote the comments so I actually understand whats going on. Full details about my AI use are in the AI reflection section in my report.
