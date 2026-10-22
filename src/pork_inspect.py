@@ -493,7 +493,7 @@ def per_class_table(metrics: Any) -> list[dict[str, Any]]:
     box = metrics.box
     box_counts = getattr(metrics, "nt_per_class", None)
     rows = []
-    for i, class_id in enumerate(box.ap_class_index):
+    for i, class_id in enumerate(box.ap_class_index):
         class_id = int(class_id)
         row: dict[str, Any] = {"class": metrics.names[class_id]}
         if box_counts is not None:
