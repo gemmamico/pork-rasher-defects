@@ -1,0 +1,9 @@
+,train,validation,test
+loose-meat,66,3,3
+packaging-error,1712,34,23
+twisted-meat,72,3,4
+unsealed,1055,81,49
+wrinkle,18,0,0
+images,3349,120,80
+images with no boxes,684,14,12
+invalid lines,0,0,0
