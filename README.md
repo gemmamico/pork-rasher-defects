@@ -44,6 +44,8 @@ It is licensed CC BY 4.0. The photos are not stored in this repo. The notebook d
 Run the tests: python -m pytest -v tests/
 Rebuild the docs: pdoc src/pork_inspect.py -o docs/html
 
+You can view the docs via my GitHub pages: https://gemmamico.github.io/pork-rasher-defects/html/
+
 ## Results
 Results from the full run (15 epochs). The test set has 80 photos.
 
@@ -55,8 +57,6 @@ Results from the full run (15 epochs). The test set has 80 photos.
 - Both models are fast enough for 60 trays per minute, even on a CPU (small model: 12 ms per tray on GPU, 92 ms on CPU).
 
 Full tables and charts are in the results folder.
-
-You can view the docs via my GitHub pages: https://gemmamico.github.io/pork-rasher-defects/html/
 
 ## AI use
 Most of the coding and formatting/layout such as this .MD file for this project was drafted by myself and Anthropic's flagship Claude Opus 5.5 model at Max effort inside the Claude Desktop app. Claude and I fully understand the ins and outs of this project. Admittedly Claude did drastically help with the starter code. Each file I have reviewed and manually uploaded myself, Claude drafted comments but I went into detail with Claude what a code block actually means rewrote the comments so I actually understand whats going on. Full details about my AI use are in the AI reflection section in my report.
